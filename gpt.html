@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Adds space between the two form sections */
+        }
+
+        .form-section {
+            flex: 1; /* Makes each section take up equal space */
+        }
+
+        .form-section input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <div class="form-container">
+            <!-- First part of the form -->
+            <div class="form-section">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+          <br>
+
+            <!-- Second part of the form -->
+            <div class="form-section">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
